@@ -26,3 +26,37 @@ button {
 button, a{
    color: inherit;
 }
+
+/* ### RWD ### */
+
+body div[id] {
+   width: 100vw;
+   height: 100vh;
+}
+
+#small {
+   background-color: red;
+   display: none;
+
+   @media screen and (max-width: 300px) {
+      display: block;
+   }
+}
+
+#medium {
+   background-color: green;
+   display: none;
+
+   @media screen and (min-width: 300px) and (max-width: 768px){
+      display: block;
+   }
+}
+
+#large {
+   background-color: blue;
+   display: none;
+
+   @media screen and (min-width: 768px) {
+      display: block;
+   }
+}
